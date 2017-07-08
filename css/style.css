@@ -118,6 +118,7 @@ input[placeholder="Email Address" i]{
 .bg-success{
     background-color: rgb(127, 167, 22)!important;
     border-color: rgb(127, 167, 22)!important;
+    max-height:50px;
 }
 
 .alink{
