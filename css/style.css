@@ -204,10 +204,6 @@ input[type="email" i]{
 
 }
 
-@media (max-width: 767px) {
-
-}
-
 .absol{
     position: absolute;
     top:0;
@@ -290,7 +286,39 @@ body > .container{
 
     .topr{
         position: absolute;
-        top:10vh;
+        width:100%;
+        /*top:5vh;*/
+    }
+    .lgis{
+        width: 303px;
+        top: -23%;
+    }
+    .lgis1{
+        width: 303px;
+        top:-50%;
+     }
+    .upp{
+        color: rgba(255, 255, 255, 0.878);
+        font-family: "Arial Narrow";
+        text-align: center;
+        line-height: 1.2;
+        width: 55vw;
+        left: 27vw;
+        top: 15.5vw;
+        font-size: 4.5vw;
+        -moz-transform: matrix( 0.65777044277742,0,0,0.6013161017257,0,0);
+        -webkit-transform: matrix( 0.65777044277742,0,0,0.6013161017257,0,0);
+        -ms-transform: matrix( 0.65777044277742,0,0,0.6013161017257,0,0);
+        position: absolute;
+        /*top: 58.2px;*/
+    }
+
+}
+@media (max-width: 563px){
+
+    .topr{
+        position: absolute;
+        /*top:5vh;*/
     }
     .lgis{
         width: 303px;
