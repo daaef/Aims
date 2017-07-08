@@ -19,7 +19,7 @@
         </p>
     </div>
     <div class="tinli"></div>
-    <div class="row">
+    <div class="row hidden-sm-down">
     <div class="col-3 text-center pt-5">
                 <img width="40" class="link" src="img/info-sign.svg" alt="">
         <span>
@@ -29,7 +29,9 @@
     <div class="col-6 cols">
         <img id="flows" src="img/flws.png" alt="" class="img-fluid">
         <img id="im" src="img/header.png" alt="" class="img-fluid">
-        <a href="#" onclick="dropIt()"><h2 class="name ml-0 mr-0">AIMS</h2></a>
+        <a href="#" onclick="dropIt()"><h2 class="name mr-0">AIMS
+            <sup><hr style="width: 17vw;border-top-color: white"></sup></h2></a>
+        <h3 class="text-uppercase upp">agriculture information management system</h3>
     </div>
         <div class="col-3 offset-6">
             <div class="row">
@@ -46,10 +48,37 @@
             </div>
         </div>
     </div>
+    <div class="row hidden-md-up">
+        <div class="col-12 cols1">
+            <img id="flows" src="img/flws.png" alt="" class="img-fluid">
+            <img id="im" src="img/header.png" alt="" class="img-fluid">
+            <a href="#" onclick="dropIt()"><h2 class="name mr-0">AIMS<sup><hr style="width: 35vw;border-top-color: white"></sup></h2></a>
+            <h3 class="text-uppercase upp">agriculture information management system</h3>
+        </div>
+        <div style="margin-top: 30vh;position: fixed" class="row ml-0 mr-0 w-100">
+            <div class="col-4 text-center mt-2">
+                <a data-toggle="modal" data-target="#myModal">
+                    <img width="40" class="link" src="img/login.svg" alt="">
+                    <!--<h5 class="ml-1 link d-inline-block align-bottom">LOG IN</h5>-->
+                </a>
+            </div>
+            <div class="col-4 text-center mt-2">
+                <img width="40" class="link" src="img/info-sign.svg" alt="">
+                <span>
+                    <!--<h5 class="link d-inline">ABOUT AIMS</h5>-->
+            </span>
+            </div>
+            <div class="col-4 text-center mt-2">
+                        <img width="40" class="link" src="img/contact.svg" alt="">
+                        <!--<h5 class="link d-inline-block align-bottom">CONTACT</h5>-->
+             </div>
+            </div>
+        </div>
+    </div>
 
 </div>
-<div class="container pt-0 mb-5">
-    <div class="row btns w-100">
+<div class="container topr pt-0 mb-5">
+    <div class="row btns ml-0 mr-0 w-100">
         <div class="col-md-5">
             <button class="btn1 btn-block mt-3">SOIL CARE-SYSTEM</button>
         </div>
@@ -157,7 +186,7 @@
 <script src="js/bootstrap.js"></script>
 <script>
     function dropIt() {
-        $('#drop').toggleClass('drop')
+        $('#drop').toggleClass('drop');
     }
 </script>
 </body>

@@ -180,7 +180,7 @@ input[type="email" i]{
 
 .tinli{
     background: #7fa716;
-    position: absolute;
+    position: fixed;
     top:0;
     right:0;
     left:0;
@@ -204,6 +204,10 @@ input[type="email" i]{
 
 }
 
+@media (max-width: 767px) {
+
+}
+
 .absol{
     position: absolute;
     top:0;
@@ -219,6 +223,15 @@ input[type="email" i]{
 
 .cols>a{
     text-decoration: none!important;
+}
+
+.abt.show{
+    position: absolute;
+    height:30vh
+}
+
+.cols.collapse.show{
+    top:30vh
 }
 
 .drop>.abt{
@@ -247,7 +260,68 @@ body > .container{
     z-index:300;
 }
 
+
+
+.upp{
+    color: rgba(255, 255, 255, 0.878);
+    font-family: "Arial Narrow";
+    text-align: center;
+    line-height: 1.2;
+    width: 20vw;
+    left: 16vw;
+    top: 9vw;
+    font-size: 1.5vw;
+    -moz-transform: matrix( 0.65777044277742,0,0,0.6013161017257,0,0);
+    -webkit-transform: matrix( 0.65777044277742,0,0,0.6013161017257,0,0);
+    -ms-transform: matrix( 0.65777044277742,0,0,0.6013161017257,0,0);
+    position: absolute;
+    /*top: 58.2px;*/
+}
+
+.cols1{
+    position:fixed;
+    z-index:300;
+}
+.cols1>a{
+    text-decoration: none;
+}
+
+@media (max-width: 767px){
+
+    .topr{
+        position: absolute;
+        top:10vh;
+    }
+    .lgis{
+        width: 303px;
+        top: -23%;
+    }
+    .lgis1{
+        width: 303px;
+        top:-50%;
+     }
+    .upp{
+        color: rgba(255, 255, 255, 0.878);
+        font-family: "Arial Narrow";
+        text-align: center;
+        line-height: 1.2;
+        width: 55vw;
+        left: 27vw;
+        top: 15.5vw;
+        font-size: 4.5vw;
+        -moz-transform: matrix( 0.65777044277742,0,0,0.6013161017257,0,0);
+        -webkit-transform: matrix( 0.65777044277742,0,0,0.6013161017257,0,0);
+        -ms-transform: matrix( 0.65777044277742,0,0,0.6013161017257,0,0);
+        position: absolute;
+        /*top: 58.2px;*/
+    }
+
+}
+
 .drop>.row>.cols{
+    top: 30vh;
+}
+.drop>.row>.cols1{
     top: 30vh;
 }
 
