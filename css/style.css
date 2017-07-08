@@ -10,6 +10,10 @@ img#im {
     top: 8vh;
 }
 
+.text-def{
+    color: rgb(89, 141, 0)!important;
+}
+
 .btn1 {
     border-width: 3px;
     border-color: rgb(127, 167, 22);
@@ -24,7 +28,7 @@ img#im {
     z-index: 12;
     font-size: 23px;
     font-family: "Arial";
-    color: rgb(89, 141, 0);
+    color: rgb(89, 141, 0)!important;
     line-height: 1.2;
 }
 
@@ -241,7 +245,6 @@ input[type="email" i]{
 }
 
 a:hover{
-    color: rgb(127, 167, 22)!important;
     text-decoration: none!important;
 }
 
@@ -353,7 +356,14 @@ body > .container{
     top: 70vh;
 }
 
-nav.navbar.navbar-toggleable-md.navbar-light.bg-faded{
+
+#navbar{
+    background-color: rgb(127, 167, 22);
+    height: 96px;
+}
+
+
+#footer{
     position: fixed;
     width: 100vw;
     bottom: 0;
@@ -361,7 +371,88 @@ nav.navbar.navbar-toggleable-md.navbar-light.bg-faded{
     opacity: 0.902;
 }
 
-body{
+
+#container{
+    width: 90vw;
+}
+
+.subtn{
+    border-width: 2px;
+    font-size: 1.1rem;
+    border-color: white!important;
+    color: white!important;
+    background-color: transparent!important;
+    font-family: "Century Gothic";
+}
+
+
+@media (min-width: 768px) {
+    #welcome{
+        margin-top: 28rem;
+    }
+
+    #login{
+        margin-top: 16rem;
+    }
+}
+
+@media (max-width: 767px) {
+    #welcome {
+        margin-top: 10rem;
+    }
+
+    #login {
+        margin-top: 4rem;
+    }
+}
+#login>div>.jumbotron{
+    border: solid 2px white;
+    border-radius: .75rem;
+    padding: 1rem 2rem;
+    background-color: transparent;!important
+}
+
+#tag{
+    font-size: 100px;
+    font-family: "Impact";
+    text-align: left;
+    -moz-transform: matrix( 0.83915045562583,0,0,0.84469098894857,0,0);
+    -webkit-transform: matrix( 0.83915045562583,0,0,0.84469098894857,0,0);
+    -ms-transform: matrix( 0.83915045562583,0,0,0.84469098894857,0,0);
+}
+
+#note{
+    font-family: "Impact";
+    text-align: left;
+    -moz-transform: matrix( 0.83915045562583,0,0,0.84469098894857,0,0);
+    -webkit-transform: matrix( 0.83915045562583,0,0,0.84469098894857,0,0);
+    -ms-transform: matrix( 0.83915045562583,0,0,0.84469098894857,0,0);
+}
+
+.about{
+    font-size: 3rem;
+    font-family: "Century Gothic";
+    -moz-transform: matrix( 0.33603377058393,0,0,0.33886472391644,0,0);
+    -webkit-transform: matrix( 0.33603377058393,0,0,0.33886472391644,0,0);
+    -ms-transform: matrix( 0.33603377058393,0,0,0.33886472391644,0,0);
+}
+
+
+.subtn:hover{
+    border-color: white!important;
+    color: white!important;
+    background-color: transparent!important;
+}
+
+.brandtxt{
+    font-family: "Arial";
+    color: rgb(255, 255, 254);
+    -moz-transform: matrix( 0.83915045562583,0,0,0.84469098894857,0,0);
+    -webkit-transform: matrix( 0.83915045562583,0,0,0.84469098894857,0,0);
+    -ms-transform: matrix( 0.83915045562583,0,0,0.84469098894857,0,0);
+}
+
+body.index{
      max-height: 100vh;
      margin: 0px;
     /*background-size:100vh;*/
@@ -369,6 +460,19 @@ body{
     /*background-size:cover;*/
     /*background-repeat:no-repeat;*/
     background: url(../img/bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+ }
+body.soil{
+     max-height: 100vh;
+     margin: 0px;
+    /*background-size:100vh;*/
+    /*background-size: 100%;*/
+    /*background-size:cover;*/
+    /*background-repeat:no-repeat;*/
+    background: url(../img/soilCareBG.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     background-size: cover;
     -moz-background-size:cover;

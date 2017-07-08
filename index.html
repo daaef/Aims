@@ -4,15 +4,16 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AIMS</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/sticky-footer-navbar.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
 </head>
-<body>
+<body class="index">
 <div class="container-fluid" id="drop">
-    <div class="abt hidden-xs-up bg-def fixed-top slideInDown">
+    <div class="abt hidden-xs-up bg-def fixed-top">
         <div class="row">
         <div class="col-md-6 text-white">
         <h2 class="text-white text-center">About AIMS</h2>
@@ -30,7 +31,7 @@
     </div>
     <div class="tinli"></div>
     <div class="row hidden-sm-down">
-    <div class="col-3 text-center pt-5">
+    <div class="col-3 text-center pt-5 animated bounceInLeft">
         <a href="#" onclick="dropIt()">
                 <img width="40" class="link" src="img/info-sign.svg" alt="">
         <span>
@@ -38,7 +39,7 @@
         </span>
         </a>
     </div>
-    <div class="col-6 cols">
+    <div class="col-6 animated slideInDown cols">
         <img id="flows" src="img/flws.png" alt="" class="img-fluid">
         <img id="im" src="img/header.png" alt="" class="img-fluid">
         <a href="#" onclick="dropIt()"><h2 class="name mr-0">AIMS
@@ -47,13 +48,13 @@
     </div>
         <div class="col-3 offset-6">
             <div class="row">
-                <div class="col-md-6 push-md-6 pt-5">
+                <div class="col-md-6 animated bounceInRight push-md-6 pt-5">
                     <a data-toggle="modal" data-target="#myModal">
                         <img width="40" class="link" src="img/login.svg" alt="">
                         <h5 class="ml-1 link d-inline-block align-bottom">LOG IN</h5>
                     </a>
                 </div>
-                <div class="col-md-6 pull-md-6 pt-5">
+                <div class="col-md-6 pull-md-6 pt-5 animated bounceInDown">
                     <a href="#" onclick="dropIt()">
                     <img width="40" class="link" src="img/contact.svg" alt="">
                     <h5 class="link d-inline-block align-bottom">CONTACT</h5>
@@ -98,22 +99,22 @@
 <div class="container topr pt-0 mb-5">
     <div class="row btns ml-0 mr-0 w-100">
         <div class="col-md-5">
-            <button class="btn1 btn-block mt-3">SOIL CARE-SYSTEM</button>
+            <button class="btn1 btn-block animated fadeInLeft mt-3"><a class="text-def" href="soilCare.html">SOIL CARE-SYSTEM</a></button>
         </div>
         <div class="col-md-5 offset-md-2">
-            <button class="btn2 btn-block btn-success mt-3">OUT GROWER SYSTEM</button>
+            <button class="btn2 btn-block animated fadeInRight btn-success mt-3"><a class="text-white" href="#">OUT GROWER SYSTEM</a></button>
         </div>
     </div>
 </div>
 <div class="container-fluid p-0">
-    <nav class="navbar navbar-toggleable-md navbar-light bg-faded text-white">
+    <nav id="footer" class="animated slideInUp navbar navbar-toggleable-md navbar-light bg-faded text-white">
         <div class="container">
         <a class="navbar-brand" href="#" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><img height="20" src="img/logoish.png" alt=""></a>
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mr-auto mt-2 mt-md-0">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">SOIL-CARE SYSTEM</a>
+                    <a class="nav-link text-white" href="soilCare.html">SOIL-CARE SYSTEM</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#">OUT GROWER SYSTEM</a>
@@ -205,6 +206,8 @@
 <script>
     function dropIt() {
         $('#drop').toggleClass('drop');
+//        $('.cols').toggleClass('animated slideInDown');
+//        $('.col1').toggle
     }
 </script>
 </body>
