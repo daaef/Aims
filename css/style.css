@@ -231,7 +231,7 @@ input[type="email" i]{
 }
 
 .drop>.abt{
-    height: 30vh;
+    height: 70vh;
     display: block!important
 
 }
@@ -347,10 +347,10 @@ body > .container{
 }
 
 .drop>.row>.cols{
-    top: 30vh;
+    top: 70vh;
 }
 .drop>.row>.cols1{
-    top: 30vh;
+    top: 70vh;
 }
 
 nav.navbar.navbar-toggleable-md.navbar-light.bg-faded{
