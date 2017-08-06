@@ -135,7 +135,7 @@ body {
 }
 
 .scrol{
-    height: 100vh;
+    /*height: 100vh;*/
     overflow-y: hidden;
     overflow-x: hidden;
 }
