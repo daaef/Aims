@@ -88,22 +88,22 @@ body {
 
 input[placeholder="Employee Name Or ID"]::-webkit-input-placeholder {
     color: #adadad!important;
-    text-align: center!important;
+    text-align: center;
 }
 
 input[placeholder="Employee Name Or ID"]:-moz-placeholder { /* Firefox 18- */
     color: #adadad!important;
-    text-align: center!important;
+    text-align: center;
 }
 
 input[placeholder="Employee Name Or ID"]::-moz-placeholder {  /* Firefox 19+ */
     color: #adadad!important;
-    text-align: center!important;
+    text-align: center;
 }
 
 input[placeholder="Employee Name Or ID"]:-ms-input-placeholder {
     color: #adadad!important;
-    text-align: center!important;
+    text-align: center;
 }
 
 *{
