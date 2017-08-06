@@ -63,18 +63,72 @@ body {
     font-weight: normal;
     src: local('Lane - Upper'), url('LANEUP__.woff') format('woff');
 }
+
+
+.empBg{
+  background-color: rgb(26, 142, 47);
+  height: 242px;
+  color: #fff;
+  text-transform: uppercase;
+  z-index: 108;
+  padding-top: 80px;
+}
+
+.ion.ion-ios-search-strong{
+    position: absolute;
+    color: #1a8e2f;
+    padding-left: 8px;
+    font-size: 25px;
+}
+
+.form-control{
+    text-align: center;
+}
+
+
+input[placeholder="Employee Name Or ID"]::-webkit-input-placeholder {
+    color: #adadad!important;
+    text-align: center!important;
+}
+
+input[placeholder="Employee Name Or ID"]:-moz-placeholder { /* Firefox 18- */
+    color: #adadad!important;
+    text-align: center!important;
+}
+
+input[placeholder="Employee Name Or ID"]::-moz-placeholder {  /* Firefox 19+ */
+    color: #adadad!important;
+    text-align: center!important;
+}
+
+input[placeholder="Employee Name Or ID"]:-ms-input-placeholder {
+    color: #adadad!important;
+    text-align: center!important;
+}
+
 *{
     border:0;
     list-style: none;
     padding: 0;
     margin:0;
     box-sizing: border-box;
-    font-weight: 100;
+    font-weight: 300;
     font-family:"Lane - Narrow";
     text-decoration: none;
     line-height: 1.2;
 }
+.a5,.a6,.a7{
+    width:27%
+}
 
+thead{
+    background-color:#1a8e2f;
+    color: white 
+}
+
+th{
+    font-weight: bold;
+}
 .a{
     letter-spacing: 2px;
     font-size: 60px;
@@ -244,6 +298,7 @@ i.ion.ion-navicon{
     background:-webkit-linear-gradient(#1a8e2f 65%, rgba(26, 142, 47, 0.57)), url(../img/sideNavBg.jpg);
     background:linear-gradient(#1a8e2f 65%, rgba(26, 142, 47, 0.57)), url(../img/sideNavBg.jpg);
     background-size:cover;
+    z-index: 200000;
     background-position: center center;
     position: fixed;
     -webkit-transition: width 1.5s,font-size 1.5s;
@@ -255,7 +310,7 @@ i.ion.ion-navicon{
 
     .owContent{
         width:calc(100% - 80px);
-        height:100vh;
+        height:100%;
         margin-left: 80px;
     }
 
@@ -283,6 +338,11 @@ i.ion.ion-navicon{
         display: none;
     }
 
+    .icon-navicon{
+        position:fixed
+    }
+
+    
 }
 
 

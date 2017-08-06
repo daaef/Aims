@@ -56,7 +56,103 @@
             </div>
         </aside>
         <main class="owContent">
-            <a onclick="moveBack()" class="icon-navicon" href="#"><p class="text-white"><i class="ion ion-navicon"></i></p></a>
+            <div class="container-fluid">
+                <div class="row"> 
+                    <div class="col-md-10 offset-md-1">
+                        <a onclick="moveBack()" class="icon-navicon" href="#"><p class="text-white"><i class="ion ion-navicon"></i></p></a>
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-4 push-md-8 pr-0">
+                                    <div class="empBg text-center">
+                                        <h1 class="emp">employees</h1>
+                                        <h2 class="num">132</h2>
+                                    </div>
+                                </div>
+                                <div class="pl-0 col-md-8 pull-md-4">
+                                    <div class="row pt-5 text-center">
+                                        <div class="col-md-3">
+                                            <div class="col-md-12">
+                                                <img src="img/addEmp.png" alt="Add New Employee">
+                                            </div>
+                                            <div class="col-md-12 text-uppercase">
+                                                <p>add new employee</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="col-md-12">
+                                                <img src="img/addNCat.png" alt="Add New Category">
+                                            </div>
+                                            <div class="col-md-12 text-uppercase">
+                                                <p>add new category</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="col-md-12">
+                                                <img src="img/addNMan.png" alt="Add New Manager">
+                                            </div>
+                                            <div class="col-md-12 text-uppercase">
+                                                <p>add new manager</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-3">
+                                        <div class="form-group form-inline">
+                                            <i class="pt-2 ion ion-ios-search-strong"></i>
+                                            <input class="form-control w-75 search" type="text" placeholder="Employee Name Or ID">
+                                            <div class="btn btn-success ml-2">search</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-100 pt-3">
+                            <div class="row">
+                                    <table class="text-uppercase table table-responsive">
+                                        <thead >
+                                            <tr>
+                                                <th class="text-center">id</th>
+                                                <th>name</th>
+                                                <th>category</th>
+                                                <th>Department</th>
+                                                <th>&nbsp;</th>
+                                                <th>&nbsp;</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-capitalize">
+                                            <tr>
+                                                <th class="text-center" scope="row">1</th>
+                                                <td class="a5">some name</td>
+                                                <td class="a6">permanent employee</td>
+                                                <td class="a7">customer care</td>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                            </tr>
+                                        <tbody class="text-capitalize">
+                                            <tr>
+                                                <th class="text-center" scope="row">2</th>
+                                                <td>another name</td>
+                                                <td>permanent employee</td>
+                                                <td>wholesale</td>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                            </tr>
+                                        <tbody class="text-capitalize">
+                                            <tr>
+                                                <th class="text-center" scope="row">3</th>
+                                                <td>no jokes at all! name</td>
+                                                <td>contract employee</td>
+                                                <td>security care</td>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
     </header>
     <script src="js/jquery-2.2.4.min.js"></script>
@@ -69,7 +165,7 @@
         }
     </script>
     <script>
-        $('.scrol','.sideNav').height($(window).height());
+        $('.scrol','.sideNav','.owContent').height($(window).height());
     </script>
 
 </body>

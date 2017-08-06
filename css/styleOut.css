@@ -5,7 +5,7 @@
     border:0;
     font-family: "Arial";
     line-height: 1.4;
-    outline:none;
+    outline:none!important;
 }
 
 .form-control:focus {
