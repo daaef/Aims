@@ -11,34 +11,63 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/sticky-footer-navbar.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
     <link rel="stylesheet" href="css/animate.css">
 </head>
 <body class="soil">
 <div class="container-fluid m-0 p-0">
-    <nav id="navbar" class="animated slideInDown navbar fixed-top navbar-toggleable-md navbar-light bg-faded">
-        <div id="container" class="container">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navy fixed-top navbar-toggleable-md navbar-light bg-faded">
+        <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#"><img height="60" src="img/soilCareLogo.png" alt=""><span class="brandtxt ml-2 font-weight-bold">SOIL CARE SYSTEM</span></a>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav ml-auto mt-2 mt-md-0">
-                    <a href="#" class="text-white mr-4"><h3 class="about">About</h3></a>
-                </ul>
-            </div>
+            <a class="navbar-brand" href="#"><img height="60" src="img/soilCareLogo.png" alt=""><span class="brandtxt ml-2 font-weight-bold">SOIL CARE SYSTEM</span></a>
+            <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav float-right">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="#" onclick="flip()"><h3 class="about">About</h3><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-success bton" href="#" onclick="flipBack()">Login</a>
+                </li>
+            </ul>
+        </div>
         </div>
     </nav>
+    <!--<nav id="navbar" class="animated slideInDown fixed-top bg-faded">-->
+        <!--<div id="container" class="container">-->
+        <a class="navbar-brand" href="#"><img height="60" src="img/soilCareLogo.png" alt=""><span class="brandtxt ml-2 font-weight-bold hidden-sm-down">SOIL CARE SYSTEM</span></a>
+            <!--&lt;!&ndash;<div class="collapse navbar-collapse">&ndash;&gt;-->
+                <!--<ul class="navbar-nav ml-auto">-->
+                    <!--<form class="form-custom">-->
+                        <!--<a href="#" class="text-white" onclick="flip()"><h3 class="about">About</h3></a>-->
+                        <!--<button class="btn btn-outline-success bton" type="button" onclick="flipBack()">Search</button>-->
+                    <!--</form>-->
+                    <!--<button class="btn btn-outline-secondary">Login</button>-->
+                <!--</ul>-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--</div>-->
+    <!--</nav>-->
     <div id="container" class="container">
         <div class="row">
-            <div id="welcome" class="col-sm-12 col-md-6">
+            <div id="welcome" class="col-sm-12 hidden-sm-down col-md-7">
                 <div class="col-md-12">
                     <h2 id="note" class="text-uppercase text-white animated bounceInUp">Welcome to the</h2>
                     <h2 id="tag" class="text-uppercase text-white animated bounceInDown">soil care system</h2>
                 </div>
             </div>
-            <div id="login" class="col-sm-12 col-md-6">
-                <div class="animated slideInRight col-md-10 float-md-right">
+            <div id="login" class="col-sm-12 a hidden-xs-up col-md-5">
+                <div class="animated flipInY col-md-10 float-md-right">
+                    <div class="jumbotron jumbotron-fluid">
+                        <div class="container text-center">
+                            <h2 class="display-4 text-white text-uppercase">about scs</h2>
+                            <p class="lead text-white">Sign and enjoy the benefits of the soil care system.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="login" class="col-sm-12 b col-md-5">
+                <div class="animated flipInY col-md-10 float-md-right">
                     <div class="jumbotron jumbotron-fluid">
                         <div class="container text-center">
                             <h2 class="display-4 text-white text-uppercase">login</h2>
@@ -68,5 +97,15 @@
 
 <script src="js/jquery-2.2.4.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script>
+    function flip() {
+        $('#login.b').addClass('hidden-xs-up');
+        $('#login.a').removeClass('hidden-xs-up');
+    }
+    function flipBack() {
+        $('#login.b').removeClass('hidden-xs-up');
+        $('#login.a').addClass('hidden-xs-up');
+    }
+</script>
 </body>
 </html>

@@ -5,207 +5,147 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AIMS</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/sticky-footer-navbar.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
 </head>
 <body class="index">
-<div class="container-fluid" id="drop">
-    <div class="abt hidden-xs-up bg-def fixed-top">
-        <div class="row">
-        <div class="col-md-6 text-white">
-        <h2 class="text-white text-center">About AIMS</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
+<header>
+    <div class="container-fluid">
+        <div class="content">
+            <div class="content-cn">
+                <img src="img/header.png" alt="" class="hed-img">
+                <img src="img/flws.png" class="w-90" alt="">
+                <a href="#" onclick="dropIt()"><h2 class="name text-white">AIMS</h2></a>
+                <p class="name-p text-white">AGRICULTURE INFORMATION MANAGEMENT SYSTEM</p>
+            </div>
         </div>
-        <div class="col-md-6 text-white">
-        <h2 class="text-white text-center">Contact Us</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
+        <div class="row hidden-sm-down">
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-8 animated slideInLeft abs a1 offset-md-2 text-center">
+                        <img class="small" src="img/info-sign.svg" alt="">
+                        <span class="text-uppercase text-center">About Aims</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 abs offset-8">
+                <div class="row">
+                    <div class="col-md-5 animated slideInDown offset-md-1 a1">
+                        <img class="small" src="img/contact.svg" alt="">
+                        <span class="text-uppercase text-center">contact</span>
+                    </div>
+                    <div class="col-md-5 animated slideInRight a1">
+                        <a href="#" data-toggle="modal" data-target="#myModal">
+                            <img class="small" src="img/login.svg" alt="">
+                            <span class="text-uppercase text-center">login</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        </div>
-    </div>
-    <div class="tinli"></div>
-    <div class="row hidden-sm-down">
-    <div class="col-3 text-center pt-5 animated bounceInLeft">
-        <a href="#" onclick="dropIt()">
-                <img width="40" class="link" src="img/info-sign.svg" alt="">
-        <span>
-                <h5 class="link d-inline">ABOUT AIMS</h5>
-        </span>
-        </a>
-    </div>
-    <div class="col-6 animated slideInDown cols">
-        <img id="flows" src="img/flws.png" alt="" class="img-fluid">
-        <img id="im" src="img/header.png" alt="" class="img-fluid">
-        <a href="#" onclick="dropIt()"><h2 class="name mr-0">AIMS
-            <sup><hr style="width: 17vw;border-top-color: white"></sup></h2></a>
-        <h3 class="text-uppercase upp">agriculture information management system</h3>
-    </div>
-        <div class="col-3 offset-6">
+        <div class="row thirt abs hidden-md-up">
             <div class="row">
-                <div class="col-md-6 animated bounceInRight push-md-6 pt-5">
-                    <a data-toggle="modal" data-target="#myModal">
-                        <img width="40" class="link" src="img/login.svg" alt="">
-                        <h5 class="ml-1 link d-inline-block align-bottom">LOG IN</h5>
+                <div class="col-4 text-center">
+                    <a href="#" data-toggle="tooltip" data-placement="left" title="ABOUT AIMS">
+                        <img class="smaller" src="img/info-sign.svg" alt="">
                     </a>
                 </div>
-                <div class="col-md-6 pull-md-6 pt-5 animated bounceInDown">
-                    <a href="#" onclick="dropIt()">
-                    <img width="40" class="link" src="img/contact.svg" alt="">
-                    <h5 class="link d-inline-block align-bottom">CONTACT</h5>
+                <div class="col-4 text-center">
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="CONTACT">
+                        <img class="smaller" src="img/contact.svg" alt="">
+                    </a>
+                </div>
+                <div class="col-4 text-center">
+                    <a href="#" data-toggle="modal" data-target="#myModal">
+                        <img class="smaller" src="img/login.svg" alt=""  data-toggle="tooltip" data-placement="left" title="LOGIN">
                     </a>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row hidden-md-up">
-        <div class="col-12 cols1">
-            <img id="flows" src="img/flws.png" alt="" class="img-fluid">
-            <img id="im" src="img/header.png" alt="" class="img-fluid">
-            <a href="#" onclick="dropIt()"><h2 class="name mr-0">AIMS<sup><hr style="width: 35vw;border-top-color: white"></sup></h2></a>
-            <h3 class="text-uppercase upp">agriculture information management system</h3>
-        </div>
-        <div style="margin-top: 30vh;position: fixed" class="row ml-0 mr-0 w-100">
-            <div class="col-4 text-center mt-2">
-                <a data-toggle="modal" data-target="#myModal">
-                    <img width="40" class="link" src="img/login.svg" alt="">
-                    <!--<h5 class="ml-1 link d-inline-block align-bottom">LOG IN</h5>-->
-                </a>
-            </div>
-            <div class="col-4 text-center mt-2">
-                <a href="#" onclick="dropIt()">
-                    <img width="40" class="link" src="img/info-sign.svg" alt="">
-                </a>
-                <span>
-                    <!--<h5 class="link d-inline">ABOUT AIMS</h5>-->
-            </span>
-            </div>
-            <div class="col-4 text-center mt-2">
-                <a href="#" onclick="dropIt()">
-                        <img width="40" class="link" src="img/contact.svg" alt="">
-                        <!--<h5 class="link d-inline-block align-bottom">CONTACT</h5>-->
-                </a>
-             </div>
+        <div class="abs w-100 text-center p-0 top btns">
+            <div class="row">
+                <div class="col-md-10 p-0 offset-md-1">
+                    <div class="row">
+                        <div class="col-md-6 p-0">
+                            <div class="row">
+                                <div class="col-md-8 p-0 offset-md-2">
+                                    <a href="soilCare.html" class="btn btn-block btn-outline-success sukout bg-faded text-uppercase">soil care system</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 p-0 offset-md-1">
+                            <a href="outGrower.html" class="btn btn-block sukses btn-success text-uppercase">out grower system</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+</header>
+<nav class="navbar navbar-toggleable-md animated slideInUp navbar-light text-center bg-faded">
+    <div class="container"><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#"><h2 class="bold text-white text-uppercase">Aims</h2></a>
 
-</div>
-<div class="container topr pt-0 mb-5">
-    <div class="row btns ml-0 mr-0 w-100">
-        <div class="col-md-5">
-            <button class="btn1 btn-block animated fadeInLeft mt-3"><a class="text-def" href="soilCare.html">SOIL CARE-SYSTEM</a></button>
-        </div>
-        <div class="col-md-5 offset-md-2">
-            <button class="btn2 btn-block animated fadeInRight btn-success mt-3"><a class="text-white" href="#">OUT GROWER SYSTEM</a></button>
-        </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto text-uppercase">
+            <li class="nav-item active">
+                <a class="light text-white nav-link" href="soilCare.html">soil care system<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="light text-white nav-link" href="outGrower.html">out grower system</a>
+            </li>
+        </ul>
+            <span class="light text-white nav-link text-uppercase">Copyright 2017</span>
     </div>
-</div>
-<div class="container-fluid p-0">
-    <nav id="footer" class="animated slideInUp navbar navbar-toggleable-md navbar-light bg-faded text-white">
-        <div class="container">
-        <a class="navbar-brand" href="#" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><img height="20" src="img/logoish.png" alt=""></a>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mr-auto mt-2 mt-md-0">
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="soilCare.html">SOIL-CARE SYSTEM</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#">OUT GROWER SYSTEM</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                Copyright 2017
-            </form>
-        </div>
-        </div>
-    </nav>
-    <!--<footer class="footer">-->
-        <!--<div class="container">-->
-            <!--&lt;!&ndash;<div class="row opa1 text-white">&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="col-1">AIMS</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="col-2">SOIL CARE SYSTEM</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="col-3">OUT GROWER SYSTEM</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="col-2 offset-md-4">COPYRIGHT 2017</div>&ndash;&gt;-->
-            <!--&lt;!&ndash;</div>&ndash;&gt;-->
-        <!--</div>-->
-    <!--</footer>-->
-</div>
+    </div>
+</nav>
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <img class="lgis" src="img/logoish.png" alt="">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <div class="row">
-                    <div class="col-md-6 text-center offset-md-3 login">
-                        <h3>LOGIN</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-10 offset-md-1">
-                    <form class="text-center">
-                        <div class="input-group form-group pt-3">
-                            <div class="input-group-addon"><img height="30" width="30" src="img/user.svg" alt=""></div>
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Username">
+                <img src="img/logoish.png" class="lgis1" alt="">
+                <div class="container">
+                    <form>
+                        <div class="form-group row">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputEmail3" placeholder="Email">
+                            </div>
                         </div>
-                        <div class="input-group form-group pt-3">
-                            <div class="input-group-addon"><img height="30" width="30" src="img/26053.png" alt=""></div>
-                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Password">
+                        <div class="form-group row">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                            </div>
                         </div>
-                        <button class="btn btn-block btn-success mt-4">Sign In</button>
-                        <div class="row justify-content-center">
-                            <a href="#" class="alink pt-5" data-toggle="modal" data-target="#forgot" data-dismiss="modal">Forgot Pasword?</a>
+                        <div class="form-group row">
+                            <div class="offset-sm-2 col-sm-10">
+                                <button type="submit" class="btn btn-primary">Sign in</button>
+                            </div>
                         </div>
                     </form>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-<!-- Modal -->
-<div class="modal fade" id="forgot" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <img class="lgis1" src="img/logoish.png" alt="">
-                <h5 class="modal-title">Forgotten Password</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form class="form-inline">
-                    <div class="form-group mx-sm-3">
-                        <label for="inputPassword2" class="sr-only">Password</label>
-                        <input type="email" class="form-control" id="inputPassword2" placeholder="Email Address">
-                    </div>
-                    <button type="submit" class="btn btn-success bg-success">Confirm identity</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
 <script src="js/jquery-2.2.4.min.js"></script>
 <script src="js/bootstrap.js"></script>
+<script src="js/jquery.easing.min.js"></script>
 <script>
     function dropIt() {
-        $('#drop').toggleClass('drop');
+        $('.content').toggleClass('drop animated slideInDown');
 //        $('.cols').toggleClass('animated slideInDown');
 //        $('.col1').toggle
     }

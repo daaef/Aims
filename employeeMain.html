@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Dashboard</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styleDash.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/tether.min.css">
+
+</head>
+<body class="employee">
+    <header>
+        <aside class="sideNav animated slideInLeft">
+            <div class="scrol">
+                <a  onclick="moveBack()" class="icon-close" href="#"><p class="text-center text-white"><i class="ion ion-close"></i></p></a>
+            <h2 class="a text-white text-center text-uppercase">Aims</h2>
+            <h5 class="text-white text-center b">Admin</h5>
+            <a href="#"><h6 class="font-weight-bold text-white text-center">LOGOUT</h6></a>
+            <div id="accordion" role="tablist" aria-multiselectable="true">
+                <div>
+                    <div id="heading1" role="tab">
+                        <a href="#empRec" class="sideLink font-weight-bold" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="empRec"><img src="img/employee_icon.png" alt="" class="white img-fluid"><span class="hide font-weight-bold">Employee Records</span></a>
+                    </div>
+                        <ul class="collapse" role="tabpanel" aria-labelledby="heading1" id="empRec">
+                            <li><a href="#">Add new Employee</a></li>
+                            <li><a href="#">Category</a></li>
+                            <li><a href="#">Manager</a></li>
+                        </ul>
+                </div>
+                <div>
+                    <div id="heading2" role="tab">
+                        <a href="#orgStruct" class="sideLink font-weight-bold" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="orgStruct"><img src="img/org_struct.png" alt="" class="white img-fluid"><span class="hide font-weight-bold">Organizational Structure</span></a>
+                    </div>
+                    <ul class="collapse" role="tabpanel" aria-labelledby="heading2"  id="orgStruct">
+                            <li><a href="#">Division</a></li>
+                            <li><a href="#">Department</a></li>
+                            <li><a href="#">Field</a></li>
+                            <li><a href="#">Section</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div id="heading3" role="tab">
+                        <a href="#payRoll" class="sideLink font-weight-bold" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="payRoll"><img src="img/payroll.png" alt="" class="white img-fluid"><span class="hide font-weight-bold">Pay Roll</span></a>
+                    </div>
+                        <ul class="collapse" id="payRoll">
+                            <li><a href="#">Add new Employee</a></li>
+                            <li><a href="#">Category</a></li>
+                            <li><a href="#">Manager</a></li>
+                        </ul>
+                        </div>
+            </div>
+            </div>
+        </aside>
+        <main class="owContent">
+            <a onclick="moveBack()" class="icon-navicon" href="#"><p class="text-white"><i class="ion ion-navicon"></i></p></a>
+        </main>
+    </header>
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script>
+        function moveBack() {
+            $('.sideNav').toggleClass('drop');
+        }
+    </script>
+    <script>
+        $('.scrol','.sideNav').height($(window).height());
+    </script>
+
+</body>
+</html>
