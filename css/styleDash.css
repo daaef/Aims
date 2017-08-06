@@ -66,9 +66,9 @@ body {
 
 
 .empBg{
-  background-color: rgb(26, 142, 47);
+  background-color: #1a8e2f;
   height: 242px;
-  color: #fff;
+  color: white;
   text-transform: uppercase;
   z-index: 108;
   padding-top: 80px;
