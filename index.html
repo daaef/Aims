@@ -1,154 +1,199 @@
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>AIMS</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animate.css">
-</head>
-<body class="index">
-<header>
-    <div class="container-fluid">
-        <div class="content">
-            <div class="content-cn">
-                <img src="img/header.png" alt="" class="hed-img">
-                <img src="img/flws.png" class="w-90" alt="">
-                <a href="#" onclick="dropIt()"><h2 class="name text-white">AIMS</h2></a>
-                <p class="name-p text-white">AGRICULTURE INFORMATION MANAGEMENT SYSTEM</p>
-            </div>
-        </div>
-        <div class="row hidden-sm-down">
-            <div class="col-md-4">
-                <div class="row">
-                    <div class="col-md-8 animated slideInLeft abs a1 offset-md-2 text-center">
-                        <img class="small" src="img/info-sign.svg" alt="">
-                        <span class="text-uppercase text-center">About Aims</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 abs offset-8">
-                <div class="row">
-                    <div class="col-md-5 animated slideInDown offset-md-1 a1">
-                        <img class="small" src="img/contact.svg" alt="">
-                        <span class="text-uppercase text-center">contact</span>
-                    </div>
-                    <div class="col-md-5 animated slideInRight a1">
-                        <a href="#" data-toggle="modal" data-target="#myModal">
-                            <img class="small" src="img/login.svg" alt="">
-                            <span class="text-uppercase text-center">login</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row thirt abs hidden-md-up">
-            <div class="row">
-                <div class="col-4 text-center">
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="ABOUT AIMS">
-                        <img class="smaller" src="img/info-sign.svg" alt="">
-                    </a>
-                </div>
-                <div class="col-4 text-center">
-                    <a href="#" data-toggle="tooltip" data-placement="top" title="CONTACT">
-                        <img class="smaller" src="img/contact.svg" alt="">
-                    </a>
-                </div>
-                <div class="col-4 text-center">
-                    <a href="#" data-toggle="modal" data-target="#myModal">
-                        <img class="smaller" src="img/login.svg" alt=""  data-toggle="tooltip" data-placement="left" title="LOGIN">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="abs w-100 text-center p-0 top btns">
-            <div class="row">
-                <div class="col-md-10 p-0 offset-md-1">
-                    <div class="row">
-                        <div class="col-md-6 col-12 col-sm-12 p-0">
-                            <div class="row">
-                                <div class="col-md-8 p-0 offset-md-2">
-                                    <a href="soilCare.html" class="btn btn-block btn-outline-success sukout bg-faded text-uppercase">soil care system</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-12 col-sm-12 p-0 offset-md-1">
-                            <a href="outGrower.html" class="btn btn-block sukses btn-success text-uppercase">out grower system</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-<nav class="navbar navbar-toggleable-md animated slideInUp navbar-light text-center bg-faded">
-    <div class="container"><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand" href="#"><h2 class="bold text-white text-uppercase">Aims</h2></a>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto text-uppercase">
-            <li class="nav-item active">
-                <a class="light text-white nav-link" href="soilCare.html">soil care system<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="light text-white nav-link" href="outGrower.html">out grower system</a>
-            </li>
-        </ul>
-            <span class="light text-white nav-link text-uppercase">Copyright 2017</span>
-    </div>
-    </div>
-</nav>
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+        <link rel="stylesheet" href="css/normalize.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <link rel="stylesheet" href="css/uikit.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+    </head>
+    <body class="uk-offcanvas-container">
+    <header>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <a uk-navbar-toggle-icon href="#offcanvas-slide" class="aline uk-navbar-toggle padTop uk-align-left uk-hidden@m uk-navbar-toggle-icon uk-icon"  uk-toggle="target: #offcanvas-push"></a>
+        <!-- Add your site or application content here -->
+        <!--<div id="offcanvas-slide" uk-offcanvas>-->
+            <!--<div class="uk-offcanvas-bar" uk-offcanvas="mode: push; overlay: true">-->
+                <!--<a uk-navbar-toggle-icon href="#offcanvas-slide" class=" uk-align-right uk-navbar-toggle-icon uk-icon" uk-toggle></a>-->
+                <!--<h1 class="uk-text-uppercase ukalign">Aims</h1>-->
+                <!--<h3 class="uk-text-capitalize uka">Admin</h3>-->
+                <!--<ul class="uk-nav-primary uk-nav-parent-icon" uk-nav>-->
+                    <!--<li class="uk-parent">-->
+                        <!--<a href="#"><img class="white" src="img/employee_icon.png" alt=""><img class="green" src="img/employee_iconGreen.png" alt="">Employee Records</a>-->
+                        <!--<ul class="uk-nav-sub">-->
+                            <!--<li><a href="#">Add new Employee</a></li>-->
+                            <!--<li><a href="#">Category</a></li>-->
+                            <!--<li><a href="#">Manager</a></li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
+                    <!--<li class="uk-parent">-->
+                        <!--<a href="#"><img class="white" src="img/org_struct.png" alt=""><img class="green" src="img/org_structGreen.png" alt="">Organizational Structure</a>-->
+                        <!--<ul class="uk-nav-sub">-->
+                            <!--<li><a href="#">DIvision</a></li>-->
+                            <!--<li><a href="#">Department</a></li>-->
+                            <!--<li><a href="#">Field</a></li>-->
+                            <!--<li><a href="#">Section</a></li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
+                    <!--<li class="uk-parent">-->
+                        <!--<a href="#"><img class="white" src="img/payroll.png" alt=""><img class="green" src="img/payrollGreen.png" alt="">Payroll</a>-->
+                        <!--&lt;!&ndash;<ul class="uk-nav-sub">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li><a href="#">Sub item</a></li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li><a href="#">Sub item</a></li>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+                    <!--</li>-->
+                <!--</ul>-->
+
+            <!--</div>-->
+        <!--</div>-->
+        <div id="offcanvas-push" uk-offcanvas="mode: push; overlay: false" class="uk-offcanvas uk-open" style="display: block;">
+            <div class="uk-offcanvas-bar uk-offcanvas uk-offcanvas-bar-animation uk-offcanvas-slide" uk-offcanvas="mode: push; overlay: true">
+                <a uk-navbar-toggle-icon="" href="#offcanvas-slide" uk-toggle="target: #offcanvas-push" class=" uk-align-right uk-navbar-toggle-icon uk-icon"></a>
+                <h1 class="uk-text-uppercase ukalign">Aims</h1>
+                <h3 class="uk-text-capitalize uka">Admin</h3>
+                <ul class="uk-nav-primary uk-nav-parent-icon uk-nav" uk-nav="">
+                    <li class="uk-parent">
+                        <a href="#"><img class="white" src="img/employee_icon.png" alt=""><img class="green" src="img/employee_iconGreen.png" alt="">Employee Records</a>
+                        <ul class="uk-nav-sub" hidden="hidden" aria-hidden="true">
+                            <li><a href="#">Add new Employee</a></li>
+                            <li><a href="#">Category</a></li>
+                            <li><a href="#">Manager</a></li>
+                        </ul>
+                    </li>
+                    <li class="uk-parent">
+                        <a href="#"><img class="white" src="img/org_struct.png" alt=""><img class="green" src="img/org_structGreen.png" alt="">Organizational Structure</a>
+                        <ul class="uk-nav-sub" hidden="hidden" aria-hidden="true">
+                            <li><a href="#">DIvision</a></li>
+                            <li><a href="#">Department</a></li>
+                            <li><a href="#">Field</a></li>
+                            <li><a href="#">Section</a></li>
+                        </ul>
+                    </li>
+                    <li class="uk-parent">
+                        <a href="#"><img class="white" src="img/payroll.png" alt=""><img class="green" src="img/payrollGreen.png" alt="">Payroll</a>
+                        <!--<ul class="uk-nav-sub">-->
+                        <!--<li><a href="#">Sub item</a></li>-->
+                        <!--<li><a href="#">Sub item</a></li>-->
+                        <!--</ul>-->
+                    </li>
+                </ul>
+
             </div>
-            <div class="modal-body">
-                <img src="img/logoish.png" class="lgis1" alt="">
-                <div class="container">
-                    <form>
-                        <div class="form-group row">
-                            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="inputEmail3" placeholder="Email">
-                            </div>
+        </div>
+    <div class="uk-offcanvas-content uk-container left uk-margin-remove uk-float-right uk-container-expand uk-offcanvas-content-animation">
+        <div class="uk-grid-small uk-margin-remove uk-text-center" uk-grid>
+            <div class="uk-text-uppercase uk-flex-last@m uk-margin-remove uk-grid-small uk-padding-remove-left uk-width-1-5@m">
+                <div class="bg-green fixed">
+                    <h1>Employees</h1>
+                    <p>132</p>
+                </div>
+            </div>
+            <div class="uk-width-4-5@m uk-flex-bottom uk-flex-first@m" uk-grid>
+                <div class="uk-text-uppercase uk-width-1-4@m">
+                <a href="#" class="deco">
+                    <img src="img/addEmp.png" alt="">
+                    <p class="color-def bold">Add new employee</p>
+                </a>
+                </div>
+                <div class="uk-text-uppercase uk-width-1-4@m">
+                    <a href="#" class="deco">
+                    <img src="img/addNCat.png" alt="">
+                    <p class="color-def bold">Add new category</p>
+                </a>
+                </div>
+                <div class="uk-text-uppercase uk-width-1-4@m">
+                    <a href="#" class="deco">
+                    <img src="img/addNMan.png" alt="">
+                    <p class="color-def bold">Add new manager</p>
+                </a>
+                </div>
+                <div class="uk-width-3-4@m uk-margin-remove-top">
+                    <div class="uk-margin" uk-margin>
+                        <div class="uk-inline inline">
+                            <span class="uk-form-icon" uk-icon="icon: search"></span>
+                            <input class="uk-input" placeholder="Employee Name or ID">
                         </div>
-                        <div class="form-group row">
-                            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-                            <div class="col-sm-10">
-                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="offset-sm-2 col-sm-10">
-                                <button type="submit" class="btn btn-primary">Sign in</button>
-                            </div>
-                        </div>
-                    </form>
+                        <button class="uk-button uk-button-default bg-green">Search</button>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="uk-overflow-auto uk-grid uk-padding-remove-top uk-padding">
+            <table class="uk-table uk-table-striped uk-table-small uk-table-divider">
+                <thead>
+                <tr>
+                    <th class="uk-text-center">ID</th>
+                    <th>Name</th>
+                    <th>category</th>
+                    <th>department</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="uk-text-center">1</td>
+                    <td>Some Name</td>
+                    <td>Permanent Employee</td>
+                    <td>Customer Care</td>
+                    <td class="uk-text-center"><span class="uk-badge warning"><a href="" uk-icon="icon: pencil"></a></span></td>
+                    <td class="uk-text-center"><span class="uk-badge alert"><a href="" uk-icon="icon: trash"></a></span></td>
+                </tr>
+                <tr>
+                    <td class="uk-text-center">2</td>
+                    <td>Another Name</td>
+                    <td>Casual Employee</td>
+                    <td>Consulting</td>
+                    <td class="uk-text-center"><span class="uk-badge warning"><a href="" uk-icon="icon: pencil"></a></span></td>
+                    <td class="uk-text-center"><span class="uk-badge alert"><a href="" uk-icon="icon: trash"></a></span></td>
+                </tr>
+                <tr>
+                    <td class="uk-text-center">3</td>
+                    <td>A much Longer Name</td>
+                    <td>Contract Employee</td>
+                    <td>Security</td>
+                    <td class="uk-text-center"><span class="uk-badge warning"><a href="" uk-icon="icon: pencil"></a></span></td>
+                    <td class="uk-text-center"><span class="uk-badge alert"><a href="" uk-icon="icon: trash"></a></span></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-</div>
-<script src="js/jquery-2.2.4.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/jquery.easing.min.js"></script>
-<script>
-    function dropIt() {
-        $('.content').toggleClass('drop animated slideInDown');
-//        $('.cols').toggleClass('animated slideInDown');
-//        $('.col1').toggle
-    }
-</script>
-</body>
+    </header>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+
+        <script>
+            function opened(){
+                $('.uk-container-expand').toggleClass('opened')
+            }
+        </script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
 </html>

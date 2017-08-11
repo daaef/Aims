@@ -1,0 +1,631 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background: #fff!important;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgb(255, 255, 255);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #1a8e2f;
+    -webkit-box-shadow: inset 0 0 6px rgb(255, 255, 255)
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(57, 206, 255, 0.4);
+}
+
+@font-face {
+    font-family: 'impactreg';
+    src: url('./impactreg.eot');
+    src: local('impactreg'), url('./impactreg.woff') format('woff'), url('./impactreg.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_7349">Text with this font applied</p> */
+.fontsforweb_fontid_7349 {
+    font-family: 'impactreg' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */
+
+
+@font-face {
+    font-family: 'Lane - Narrow';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Lane - Narrow'), url('LANENAR_.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Lane - Posh';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Lane - Posh'), url('LANEPOSH.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Lane - Upper';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Lane - Upper'), url('LANEUP__.woff') format('woff');
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+*{
+    border:0;
+    list-style: none;
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-weight: 300;
+    font-family:"Lane - Narrow";
+    text-decoration: none;
+    line-height: 1.2;
+}
+
+.uk-offcanvas{
+    display:block
+}
+
+.uk-offcanvas-bar{
+    -webkit-transform: translateX(-300px);
+    transform: translateX(-300px);
+    padding:0px;
+    background:-webkit-linear-gradient(#1a8e2f 65%, rgba(26, 142, 47, 0.57)), url(../img/sideNavBg.jpg);
+    background:linear-gradient(#1a8e2f 65%, rgba(26, 142, 47, 0.57)), url(../img/sideNavBg.jpg);
+    background-size:cover;
+    background-position: center center;
+}
+
+.uk-nav>.uk-parent>a{
+    padding-left: 40px;
+}
+
+
+.uk-nav>.uk-parent>.uk-nav-sub{
+    padding-left: 65px;
+}
+
+.uk-navbar-toggle.uk-align-left{
+    top: 15px;
+    left:20px;
+    position: fixed;
+    color: rgba(0, 0, 0, 0.4);
+    -webkit-transition: color 1s;
+    -moz-transition: color 1s;
+    -ms-transition: color 1s;
+    -o-transition: color 1s;
+    transition: color 1s;
+    height:20px;
+}
+
+.uk-navbar-toggle.uk-align-left:hover{
+    color: rgb(0, 0, 0);
+}
+
+.ukalign{
+    text-align: center;
+    padding-top: 45px;
+    font-weight: 300;
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+.uka{
+    text-align: center;
+    font-weight: 100;
+    margin-top: 0px;
+}
+
+.uk-parent>a,.uk-nav-primary>li>a,.uk-card-primary.uk-card-body .uk-nav-primary>li>a, .uk-card-primary>:not([class*=uk-card-media]) .uk-nav-primary>li>a, .uk-card-secondary.uk-card-body .uk-nav-primary>li>a, .uk-card-secondary>:not([class*=uk-card-media]) .uk-nav-primary>li>a, .uk-light .uk-nav-primary>li>a, .uk-offcanvas-bar .uk-nav-primary>li>a, .uk-overlay-primary .uk-nav-primary>li>a, .uk-section-primary:not(.uk-preserve-color) .uk-nav-primary>li>a, .uk-section-secondary:not(.uk-preserve-color) .uk-nav-primary>li>a, .uk-tile-primary:not(.uk-preserve-color) .uk-nav-primary>li>a, .uk-tile-secondary:not(.uk-preserve-color) .uk-nav-primary>li>a{
+    font-weight: 600;
+    color: #fff;
+}
+
+.uk-parent.uk-open>a{
+    color: #1a8e2f!important;
+    background-color: #fff;
+}
+
+.uk-offcanvas-bar .uk-parent img{
+    height: 40px;
+    text-align: right;
+    padding-right: 5px;
+    position: absolute;
+    right:0;
+}
+
+.uk-offcanvas-bar .uk-nav-primary>li>a{
+    font-size: 0px;
+    line-height: 50px;
+}
+
+.uk-offcanvas.uk-open .uk-offcanvas-bar .uk-nav-primary>li>a{
+    font-size: 1rem;
+    line-height: 50px;
+}
+
+.uk-offcanvas.uk-open .uk-offcanvas-bar .uk-parent img{
+    height: 40px;
+    padding-right: 5px;
+    position: static;
+}
+
+.uk-parent>a>.green{
+    display: none;
+}
+
+.uk-open>a>.white{
+    display: none;
+}
+
+.uk-open>a>.green{
+    display: inline;
+}
+
+.uk-nav-sub>li>a{
+    line-height: 35px;
+    color: #ffffff!important;
+}
+
+.uk-nav-sub>li>a:hover{
+    color: #bababa!important;
+}
+
+.uk-nav-parent-icon>.uk-parent>a::after{
+    content: none;
+}
+
+a.uk-align-right.uk-navbar-toggle-icon.uk-icon{
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+.uk-container-expand{
+    height:100%;
+    max-width:100%!important;
+    width:100%;
+    -webkit-transition: width 450ms;
+    -moz-transition: width 450ms;
+    -ms-transition: width 450ms;
+    -o-transition: width 450ms;
+    transition: width 450ms;
+}
+
+.uk-container{
+    box-sizing: border-box;
+}
+
+.bg-green {
+    background-color: #1a8e2f;
+    color: #fff;
+}
+
+.fixed{
+    width:100%;
+    height: 270px;
+}
+
+.fixed>h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 100;
+    padding-top: 70px;
+}
+
+.fixed>p{
+    font-family: impactreg;
+    font-size: 80px;
+}
+
+span[uk-icon="icon: search"]{
+    color: #1a8e2f;
+}
+
+.color-def{
+    color: #1a8e2f;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.inline{
+    width:60%;
+}
+
+input[placeholder="Employee Name Or ID"]{
+    background-color: #9d9d9d!important;
+}
+
+input[placeholder="Employee Name Or ID"]::-webkit-input-placeholder {
+    color: #9d9d9d!important;
+    text-align: center;
+}
+
+input[placeholder="Employee Name Or ID"]:-moz-placeholder { /* Firefox 18- */
+    color: #9d9d9d!important;
+    text-align: center;
+}
+
+input[placeholder="Employee Name Or ID"]::-moz-placeholder {  /* Firefox 19+ */
+    color: #9d9d9d!important;
+    text-align: center;
+}
+
+input[placeholder="Employee Name Or ID"]:-ms-input-placeholder {
+    color: #9d9d9d!important;
+    text-align: center;
+}
+
+.deco:link,.deco:visited,.deco:active,.deco:hover{
+    text-decoration: none;
+}
+
+thead{
+    background-color: #1a8e2f;
+}
+
+.uk-table th{
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+
+.uk-table td{
+    line-height: 25px;
+    font-weight: bold;
+}
+
+.uk-badge{
+    height: 30px;
+    padding: 0 5px;
+    border-radius: 50%;
+}
+
+.warning{
+    background-color: #f0972d;
+}
+
+.alert{
+    background-color: #f02d2d;
+}
+
+a.uk-icon:link,a.uk-icon:visited,a.uk-icon:active,a.uk-icon:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (min-width: 1025px) {
+    .uk-offcanvas.uk-open ~ .uk-container-expand{
+        /*transform: translateX(350px);*/
+        float: right;
+        position: relative;
+    }
+}
